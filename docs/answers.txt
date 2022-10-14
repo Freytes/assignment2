@@ -1,0 +1,330 @@
+
+Paste the console output you saved at the end of step 3.C (2 points)
+**********************************************************************
+** Visual Studio 2022 Developer PowerShell v17.2.4
+** Copyright (c) 2022 Microsoft Corporation
+**********************************************************************
+PS C:\Users\Cfrey\Source\Repos\assignment2> git push
+Everything up-to-date
+PS C:\Users\Cfrey\Source\Repos\assignment2> git commit
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .vs/
+        docs/
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\Cfrey\Source\Repos\assignment2> git push
+Everything up-to-date
+PS C:\Users\Cfrey\Source\Repos\assignment2>
+
+
+How many commits have been done to the repository (not only by you, but by anyone) so far? Write the git command you used to get this information (4 points)
+Git Command: git log
+
+Answer: Twelve commits
+
+PS C:\Users\Cfrey\Source\Repos\assignment2\docs> git log
+commit acc6a23f0010b90c06528307abe359ffa578f7ce (HEAD -> master, origin/master, origin/HEAD)
+Author: Christopher Freytes <cf20h@fsu.edu>
+Date:   Thu Oct 13 21:50:37 2022 -0400
+
+    Commited Local Changes
+
+commit f4975e5d56ff331762b318bfd12c5236e0299f25
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Wed Sep 25 18:33:08 2019 -0400
+
+    -> Adding an empty README.md file
+
+commit e424a923e80da4772ca789591ef3326230062a71
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Wed Sep 25 18:13:30 2019 -0400
+
+    -> Tracking .gitignore
+
+commit 03106e92a1e36708334c69dd071088c6d0937b1d
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Wed Sep 11 16:58:59 2019 -0400
+
+:
+commit acc6a23f0010b90c06528307abe359ffa578f7ce (HEAD -> master, origin/master, origin/HEAD)
+Author: Christopher Freytes <cf20h@fsu.edu>
+commit acc6a23f0010b90c06528307abe359ffa578f7ce (HEAD -> master, origin/master, origin/HEAD)
+Author: Christopher Freytes <cf20h@fsu.edu>
+Date:   Thu Oct 13 21:50:37 2022 -0400
+
+    Commited Local Changes
+
+commit f4975e5d56ff331762b318bfd12c5236e0299f25
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Wed Sep 25 18:33:08 2019 -0400
+
+    -> Adding an empty README.md file
+
+commit e424a923e80da4772ca789591ef3326230062a71
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Wed Sep 25 18:13:30 2019 -0400
+
+    -> Tracking .gitignore
+
+commit 03106e92a1e36708334c69dd071088c6d0937b1d
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Wed Sep 11 16:58:59 2019 -0400
+
+    -> Declared the trivial destructors for all classes
+    -> Fully formatted toString methods for all classes
+    -> Added test cases in the main method for testing the implementations
+    -> Added validation on value for engine sizes in the  Car class
+
+commit f9cd890b3f89fbe5920a1fdf7da34ee915ba27b9
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Thu Sep 5 18:42:39 2019 -0400
+
+    -> Partial implementation of PoweredVehicle and Car
+    -> Definition of virtual functions
+
+commit f9c24b027e6275ff6a1911241014c44971b4e8d0
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Thu Sep 5 18:04:36 2019 -0400
+
+    Refactored Vehicle class to separate definition and declarations
+    Added mileageEstimate abstract method to Vehicle
+    Implemented the Bicycle class
+
+commit 4f6c88c953f4601929df7980a19dcdaee4f13854
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Thu Sep 5 14:59:19 2019 -0400
+
+    Base Vehicle class created
+
+When was the README.md  file modified last? Write the git command you used to get this information (4 points)
+The last date the file was modified was: 
+Author: Christopher Freytes <cf20h@fsu.edu>
+Date:   Thu Oct 13 21:50:37 2022 -0400
+
+Git Command: git log -README.md
+
+commit acc6a23f0010b90c06528307abe359ffa578f7ce (HEAD -> master, origin/master, origin/HEAD)
+Author: Christopher Freytes <cf20h@fsu.edu>
+Date:   Thu Oct 13 21:50:37 2022 -0400
+
+    Commited Local Changes
+
+diff --git a/README.md b/README.md
+index e69de29..83e6ffc 100644
+--- a/README.md
++++ b/README.md
+@@ -0,0 +1,3 @@
++Name: Christopher Freytes
++
++FSUID: cf20h
+\ No newline at end of file
+
+commit f4975e5d56ff331762b318bfd12c5236e0299f25
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Wed Sep 25 18:33:08 2019 -0400
+
+    -> Adding an empty README.md file
+:
+
+Mention two reasons why branches are used in a Git repository (4 points)
+
+
+What is the difference between git log and git status? (4 points)
+The git log command displays committed snapshots, It lets you list the project history, filter it, and search for specific changes. 
+While git status lets you inspect the working directory and the staging area, git log only operates on the committed history.
+
+What command would you use to see the commits where “Vehicle.h” was one of the committed files? (4 points)
+
+Git Command: git log Vehicle.h
+
+PS C:\Users\Cfrey\Source\Repos\assignment2> git log -p Vehicle.h
+commit 03106e92a1e36708334c69dd071088c6d0937b1d
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Wed Sep 11 16:58:59 2019 -0400
+
+    -> Declared the trivial destructors for all classes
+    -> Fully formatted toString methods for all classes
+    -> Added test cases in the main method for testing the implementations
+    -> Added validation on value for engine sizes in the  Car class
+
+diff --git a/Vehicle.h b/Vehicle.h
+index dc53993..2ac751f 100644
+--- a/Vehicle.h
++++ b/Vehicle.h
+@@ -16,11 +16,12 @@ private :
+
+ public:
+     explicit Vehicle(string brand = "unknown", string model = "unknown");
++
++    virtual ~Vehicle();
+     string getBrand();
+     void setBrand(string brand);
+     string getModel();
+     void setModel(string model);
+-
+     virtual string toString();
+     virtual double mileageEstimate(
+             double time) = 0; // Method that computes how many miles can be traversed by the vehicle in the given amount of time. The time parameter is given in minutes
+
+commit f9cd890b3f89fbe5920a1fdf7da34ee915ba27b9
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Thu Sep 5 18:42:39 2019 -0400
+
+    -> Partial implementation of PoweredVehicle and Car
+    -> Definition of virtual functions
+
+diff --git a/Vehicle.h b/Vehicle.h
+index f3ddf77..dc53993 100644
+--- a/Vehicle.h
++++ b/Vehicle.h
+@@ -15,18 +15,13 @@ private :
+     string myBrand, myModel;
+
+ public:
+-    Vehicle(string brand = "unknown", string model = "unknown");
+-
++    explicit Vehicle(string brand = "unknown", string model = "unknown");
+     string getBrand();
+-
+     void setBrand(string brand);
+-
+     string getModel();
+-
+     void setModel(string model);
+
+-    string toString();
+-
++    virtual string toString();
+     virtual double mileageEstimate(
+             double time) = 0; // Method that computes how many miles can be traversed by the vehicle in the given amount of time. The time parameter is given in minutes
+ };
+
+commit f9c24b027e6275ff6a1911241014c44971b4e8d0
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Thu Sep 5 18:04:36 2019 -0400
+
+    Refactored Vehicle class to separate definition and declarations
+    Added mileageEstimate abstract method to Vehicle
+    Implemented the Bicycle class
+
+diff --git a/Vehicle.h b/Vehicle.h
+index 6ef1bca..f3ddf77 100644
+--- a/Vehicle.h
++++ b/Vehicle.h
+@@ -15,30 +15,20 @@ private :
+     string myBrand, myModel;
+
+ public:
+-    Vehicle(string brand = "unknown", string model = "unknown") {
+-        setBrand(brand);
+-        setModel(model);
+-    }
+-
+-    string getBrand() {
+-        return myBrand;
+-    }
+-
+-    void setBrand(string brand) {
+-        myBrand = brand;
+-    }
+-
+-    string getModel() {
+-        return myModel;
+-    }
+-
+-    void setModel(string model) {
+-        myModel = model;
+-    }
+-
+-    string toString() {
+-        return getBrand() + " " + getModel();
+-    }
++    Vehicle(string brand = "unknown", string model = "unknown");
++
++    string getBrand();
++
++    void setBrand(string brand);
++
++    string getModel();
++
++    void setModel(string model);
++
++    string toString();
++
++    virtual double mileageEstimate(
++            double time) = 0; // Method that computes how many miles can be traversed by the vehicle in the given amount of time. The time parameter is given in minutes
+ };
+
+
+
+commit 4f6c88c953f4601929df7980a19dcdaee4f13854
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Thu Sep 5 14:59:19 2019 -0400
+
+    Base Vehicle class created
+
+diff --git a/Vehicle.h b/Vehicle.h
+new file mode 100644
+index 0000000..6ef1bca
+--- /dev/null
++++ b/Vehicle.h
+@@ -0,0 +1,45 @@
++//
++// Created by Esteban Parra on 9/5/19.
++//
++
++#ifndef DRIVINGSIMULATOR_VEHICLE_H
++#define DRIVINGSIMULATOR_VEHICLE_H
++
++#include <string>     // std::string, std::stoi
++
++using namespace std;
++
++class Vehicle {
++
++private :
++    string myBrand, myModel;
++
++public:
++    Vehicle(string brand = "unknown", string model = "unknown") {
++        setBrand(brand);
++        setModel(model);
++    }
++
++    string getBrand() {
++        return myBrand;
++    }
++
++    void setBrand(string brand) {
++        myBrand = brand;
++    }
++
++    string getModel() {
++        return myModel;
++    }
++
++    void setModel(string model) {
++        myModel = model;
++    }
++
++    string toString() {
++        return getBrand() + " " + getModel();
++    }
++};
++
++
++#endif //DRIVINGSIMULATOR_VEHICLE_H
+(END)
+
+
+What command would you use to see the commits whose commit message contains the word “file”? (4 points)
+git log --all --grep='file'
+
+In the context of object-oriented programming (I) What is inheritance? (II) What is polymorphism? (III) What is encapsulation? (6 points)
+What is inheritance?: Inheritance is the mechanism of basing an object or class upon another object (prototype-based inheritance) or class .
+What is polymorphism?: Polymorphism is the ability of an object to take on many forms
+What is encapsulation?: Encapsulation refers to the bundling of data with the methods that operate on that data,
